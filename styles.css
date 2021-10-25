@@ -142,14 +142,26 @@ span {
 
 .btn.details {
     background-color: var(--CEA);
-    color: white;
+    color: var(--WHITE);
     margin-left: 7%;
     padding: 0 35px;
 }
 
+.btn.danger {
+    background-color: var(--DANGER);
+    color: var(--WHITE);
+    /*margin-left: 7%;*/
+}
+
+.btn.danger:hover {
+    transition: all 0.5s;
+    background-color: VAR(--DANGER-TEXT);
+}
+
 /* INPUTS */
 input,
-select {
+select,
+textarea {
     background: var(--SNOW-LIGHT);
     border: 1px solid var(--SNOW);
     border-radius: 4px;
@@ -159,10 +171,12 @@ select {
     padding: 0 24px;
     min-width: 200px;
 }
-input:focus {
+input,
+textarea:focus {
     border: 1px solid var(--DOVE-GREY);
 }
-input::placeholder {
+input,
+textarea::placeholder {
     color: var(--DOVE-GREY);
 }
 input:focus::placeholder {

@@ -2,10 +2,6 @@ main {
     width: 80vw;
 }
 
-.breadcrumb > span {
-    padding-right: 15px;
-}
-
 .container-produto {
     margin-top: 55px;
 }

@@ -270,6 +270,10 @@ header > div {
     width: 80vw;
 }
 
+.breadcrumb span {
+    padding-right: 15px;
+}
+
 .container-info {
     display: flex;
     justify-content: space-between;

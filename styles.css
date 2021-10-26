@@ -347,6 +347,19 @@ header > div {
     font-weight: 300;
 }
 
+/* DELETE */
+.deletar h1 {
+    margin-bottom: 20px;
+}
+.deletar .delete-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+.delete-buttons a {
+    margin-left: 20px;
+}
+
+
 @media screen and (max-width: 966px) {
     .col20, .col25 {
         display: none;

@@ -206,13 +206,16 @@ select {
     padding: 0 24px;
     min-width: 200px;
 }
-input:focus {
+input:focus,
+textarea:focus {
     border: 1px solid var(--DOVE-GREY);
 }
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: var(--DOVE-GREY);
 }
-input:focus::placeholder {
+input:focus::placeholder,
+textarea:focus::placeholder {
     color: transparent;
 }
 .label-text {

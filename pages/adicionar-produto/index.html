@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../produtos.css">
+    <title>C&A Controle de estoque</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="../../img/logo.png" alt="logo" />
+                <h2>Controle de estoque</h2>
+                </a>
+            <div class="user">
+                <img src="../../img/icon.svg" alt="icon" />
+                <div>
+                    <span>Bem-vinda(o)</span>
+                    <p>Nome do usuário</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumb">
+            <a href="../../index.html"><span>Home</span></a>
+            <span>>></span>
+            <span>Adicionar produto</span>
+        </div>
+        <section class="container-produto">
+            <div class="produto-info">
+                <div class="img-produto">
+                    <div class="img-area">
+                        <label for="imagem">Foto do produto</label>
+                        <input type="text" name="imagem" id="imagem" placeholder="URL da imagem">
+                    </div>
+                    <div class="btn-details editar">
+                        <a href="../../index.html" class="btn secondary">salvar alterações</a>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="produto-details">
+                        <input type="text" placeholder="nome do produto">
+                        <textarea name="" id="produto-descricao" rows="5" placeholder="descrição do produto, até 240 caracteres" ></textarea>
+                    </div>
+                    <div class="departamento-categoria">
+                        <div class="departamento-info">
+                            <label for="departamento">Departamento</label>
+                            <select name="departamento" id="departamento">
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="infantil">Infantil</option>
+                                <option value="plus-size">Plus Size</option>
+                            </select>
+                        </div>
+                        <div class="categoria-info">
+                            <label for="categoria">Categoria</label>
+                            <select name="categoria" id="categoria">
+                                <option value="top">Top</option>
+                                <option value="bottom">Bottom</option>
+                                <option value="inteiro">Inteiro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="estoque">
+                        <h3>estoque</h3>
+                        <div class="container-estoque">
+                            <div class="container-tamanhos">
+                                <label for="tamanhos">Tamanhos</label>
+                                <input class="input-estoque" type="text" name="tamanhos" placeholder="PP">
+                                <input class="input-estoque" type="text" name="tamanhos" placeholder="P">
+                                <input class="input-estoque" type="text" name="tamanhos" placeholder="M">
+                                <input class="input-estoque" type="text" name="tamanhos" placeholder="G">
+                                <input class="input-estoque" type="text" name="tamanhos" placeholder="GG">
+                                <input class="input-estoque" type="text" name="tamanhos" placeholder="XG">
+                            </div>
+                            <div class="container-quantidade">
+                                <label for="quantidade">Quantidade</label>
+                                <input class="input-estoque" type="text" name="quantidade">
+                                <input class="input-estoque" type="text" name="quantidade">
+                                <input class="input-estoque" type="text" name="quantidade">
+                                <input class="input-estoque" type="text" name="quantidade">
+                                <input class="input-estoque" type="text" name="quantidade">
+                                <input class="input-estoque" type="text" name="quantidade">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="movimentacoes">
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>

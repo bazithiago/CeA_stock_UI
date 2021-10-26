@@ -235,7 +235,7 @@ textarea:focus::placeholder {
 /* HEADER */
 header {
     width: 100vw;
-    background-color: #f9fafc;
+    background-color: var(--SMOKE-LIGHTER);
     display: flex;
     justify-content: center;
     padding: 28px 0;
@@ -268,7 +268,7 @@ header > div {
 
 
 
-/* Container */
+/* HOME */
 .container {
     width: 80vw;
 }
@@ -281,29 +281,47 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .table-title {
-    margin-top: 53px;
-
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--BLACK);
+    padding: 0 20px 8px 20px;
 }
 
-.table-title > span {
+.table-title > div,
+.container-card > div {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.col20  {
+    width: 20%;
+    padding-right: 10px;
+}
+
+.col25  {
+    width: 25%;
+    padding-right: 10px;
+}
+
+.col75 {
+    width: 75%;
+    padding-right: 10px;
+}
+
+.col80  {
+    width: 80%;
+    padding-right: 10px;
+}
+
+.table-title > div {
     font: "Roboto" var(--BLACK);
     font-weight: 500;
-}
-
-.table-title span:nth-child(1) {
-    margin: 0 2%;
-}
-
-.table-title span:nth-child(2) {
-    margin-right: 43%;
-}
-
-.table-title span:nth-child(4) {
-    margin: 0 8%;
 }
 
 .container-card {
@@ -311,28 +329,43 @@ header > div {
     padding: 20px;
     border-radius: 8px;
     background-color: var(--SNOW-LIGHT);
-
     align-items: center;
 }
 
 .card-image {
-    margin-right: 2%;
-    margin-left: 1.5%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url('img/Ellipse 2imageperson.png');
+    background-size: cover;
 }
 
 .container-card p {
     font-weight: 700;
 }
 
-.container-card span {
+.container-card .col25 {
     font-weight: 300;
 }
 
-.card-detail-division {
-    margin: 0 9% 0 23%;
-}
+@media screen and (max-width: 966px) {
+    .col20, .col25 {
+        display: none;
+    }
 
-.card-detail-category {
-    margin-right: 11%;
-}
+    .col25.details {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
 
+    .col80 {
+        width: 100%;
+    }
+
+    .container-card > div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}

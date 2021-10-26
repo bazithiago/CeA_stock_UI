@@ -336,8 +336,7 @@ header > div {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-image: url('img/Ellipse 2imageperson.png');
-    background-size: cover;
+    object-fit: cover;
 }
 
 .container-card p {

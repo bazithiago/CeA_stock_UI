@@ -18,13 +18,49 @@ a {
 
 button {
     cursor: pointer;
+
+/*Mexi daqui - Neily */
 }
 
 body {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "header header header"
+        "aside aside main"
+        "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.o-header {
     display: flex;
-    flex-direction: column;
+    grid-area: header;
+    padding: 2rem ;
+}
+.o-aside {
+    grid-area: aside;
+    padding-top: 2rem;
+    padding-right: 2rem;
     align-items: center;
 }
+.o-main {
+    display: flexbox;
+    grid-area: main;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    line-height: 2rem;
+}
+.o-footer {
+    display: flexbox;
+    grid-area: footer;
+    align-items: right;
+    padding: 1rem;
+    background-color: var(--ORANGE);
+}
+/*Até aqui - Neily */
+
 /* RESET END */
 
 /* FONT-FAMILY */
@@ -142,26 +178,14 @@ span {
 
 .btn.details {
     background-color: var(--CEA);
-    color: var(--WHITE);
+    color: white;
     margin-left: 7%;
     padding: 0 35px;
 }
 
-.btn.danger {
-    background-color: var(--DANGER);
-    color: var(--WHITE);
-    /*margin-left: 7%;*/
-}
-
-.btn.danger:hover {
-    transition: all 0.5s;
-    background-color: VAR(--DANGER-TEXT);
-}
-
 /* INPUTS */
 input,
-select,
-textarea {
+select {
     background: var(--SNOW-LIGHT);
     border: 1px solid var(--SNOW);
     border-radius: 4px;
@@ -171,12 +195,10 @@ textarea {
     padding: 0 24px;
     min-width: 200px;
 }
-input,
-textarea:focus {
+input:focus {
     border: 1px solid var(--DOVE-GREY);
 }
-input,
-textarea::placeholder {
+input::placeholder {
     color: var(--DOVE-GREY);
 }
 input:focus::placeholder {
@@ -293,3 +315,4 @@ header > div {
 .card-detail-category {
     margin-right: 11%;
 }
+

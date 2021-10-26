@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../produtos.css">
+    <title>C&A Controle de estoque</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="../../img/logo.png" alt="logo" />
+                <h2>Controle de estoque</h2>
+            </a>
+            <div class="user">
+                <img src="../../img/icon.svg" alt="icon" />
+                <div>
+                    <span>Bem-vinda(o)</span>
+                    <p>Nome do usuário</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumb">
+            <span>Home</span>
+            <span>>></span>
+            <span>Detalhes do produto</span>
+        </div>
+        <section class="container-produto">
+            <div class="produto-info">
+                <div class="img-produto">
+                    <img src="../../img/produto.jpg" alt="Blusa manga curta esportiva poliamida ace">
+                    <div class="btn-details">
+                        <a href="../editar-produto/" class="btn secondary">editar produto</a>
+                        <a href="../excluir-produto" class="btn danger">excluir produto</a>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="produto-details">
+                        <h3>blusa de poliamida esportiva ace manga curta</h3>
+                        <textarea name="" id="produto-descricao"
+                            rows="5">Blusa feminina confeccionada em malha leve de poliamida. O modelo tem comprimento curto e caimento levemente ajustado. As mangas são curtas. O decote é redondo. Possui aplicação frontal com o logo da marca.</textarea>
+                    </div>
+
+                    <div class="departamento-categoria">
+                        <div class="detalhe-departamento-info">
+                            <h4>Departamento</h4>
+                            <p>Feminino</p>
+                        </div>
+                        <div class="detalhe-categoria-info">
+                            <h4>Categoria</h4>
+                            <p>Top</p>
+                        </div>
+                    </div>
+
+
+                    <div class="estoque">
+                        <h3>estoque</h3>
+                        <div class="detalhe-container-estoque">
+                            <div class="detalhe-container-tamanhos">
+                                <h4>Tamanhos</h4>
+                                <p>PP</p>
+                                <p>P</p>
+                                <p>M</p>
+                                <p>G</p>
+                                <p>GG</p>
+                                <p>XG</p>
+                            </div>
+                            <div class="detalhe-container-quantidade">
+                                <h4>Quantidades</h4>
+                                <p>1200</p>
+                                <p>3000</p>
+                                <p>5000</p>
+                                <p>900</p>
+                                <p>800</p>
+                                <p>500</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="movimentacoes">
+                <h3>histórico de movimentações</h3>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Data/hora</th>
+                            <th>Usuário</th>
+                            <th>Entrada</th>
+                            <th>Saída</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>2021-11-20</span>
+                            </td>
+                            <td>
+                                <span>Beatriz Medina</span>
+                            </td>
+                            <td>
+                                <span>1200</span>
+                            </td>
+                            <td>
+                                <span>--</span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

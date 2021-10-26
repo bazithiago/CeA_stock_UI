@@ -14,23 +14,25 @@
 a {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
 }
 
 button {
     cursor: pointer;
-
-/*Mexi daqui - Neily */
 }
 
 body {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: grid;
     grid-gap: 1rem;
     grid-template-areas: 
         "header header header"
         "aside aside main"
         "footer footer footer";
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto; */
 }
 
 .o-header {
@@ -87,7 +89,8 @@ h4 {
 p {
     color: var(--BLACK);
 }
-span {
+span, 
+textarea {
     font-size: 0.9rem;
     color: var(--DARK-GREY);
 }
@@ -175,12 +178,20 @@ span {
     transition: all 0.5s;
     background-color: VAR(--EMERALD-LIGHTER);
 }
-
 .btn.details {
     background-color: var(--CEA);
     color: white;
     margin-left: 7%;
     padding: 0 35px;
+}
+.btn.danger {
+    background-color: var(--DANGER);
+    color: var(--WHITE);
+}
+.btn.danger:hover {
+    background-color: var(--DANGER-TEXT);
+    box-shadow: 0 4px 4px 0 var(--SMOKE-LIGHTER);
+    transition: all 0.5s;
 }
 
 /* INPUTS */
@@ -251,6 +262,8 @@ header > div {
     font-weight: 700;
 }
 /* END HEADER */
+
+
 
 /* Container */
 .container {
